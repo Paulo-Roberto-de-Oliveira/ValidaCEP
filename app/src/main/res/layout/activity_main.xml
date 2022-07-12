@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite abaixo CNPJ:"
+        android:textColor="@color/colorPrimary"></TextView>
+
+    <EditText
+        android:id="@+id/cnpj_validar"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Apenas numeros"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/botao_validar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:onClick="validaCnpj"
+            android:text="Validar o CNPJ" />
+
+        <Button
+            android:id="@+id/botao_Cpf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:onClick="chamaCpf"
+            android:text="Consultar CPF" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cnpj_detalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dados deste CNPJ:"
+        android:textColor="@color/colorPrimaryDark"></TextView>
+
+
+</LinearLayout>
